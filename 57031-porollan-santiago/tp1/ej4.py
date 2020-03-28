@@ -1,6 +1,13 @@
 def p(r):
-    for x in range(r):
+    for x in range(1, r+1):
         print("*"*x)
 
 if __name__ == "__main__":
-    p(5)
+    while 1:
+        try:
+            r = int(input("rango: "))
+        except:
+            print("ingrese numero")
+        else:
+            break
+    p(r)
