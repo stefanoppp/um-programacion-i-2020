@@ -5,6 +5,35 @@ menos 20 líneas y hacer un conteo de palabras, al finalizar el conteo mostrar l
 que más se repiten. Mostrar todas las palabras en orden alfabético y la cantidad que se repite.
 """
 
+
+def wordcount(text):
+
+    text = text.replace("\n", " ")
+    text = text.replace(",", "")
+    text = text.replace(".", "")
+    text = text.replace("(", "")
+    text = text.replace(")", "")
+    text = text.lower()
+    text = text.split(" ")
+    [text.remove("") for i in range(text.count(""))]
+
+    text.sort()
+
+    dicc = {}
+    for item in text:
+        dicc[item] = text.count(item)
+
+    print("cantidad de palabras: " + str(len(text)))
+
+    print("\n\n\n20 palabras mas repetidas: ")
+    for item in sorted(dicc, key=dicc.get, reverse=True)[:20]:
+        print(item + " " + str(dicc[item]))
+
+    print("\n\n\nTodas las palabras y sus cantidades: ")
+    for item in dicc.items():
+        print(str(item[0]) + ": " + str(item[1]))
+
+
 text = """
 
 Internamente se distinguen algunas diferencias con los peces cartilaginosos:
@@ -39,29 +68,4 @@ están por delante) o ápodos (carecen de aletas pelvianas).
 
 """
 
-text = text.replace("\n", " ")
-text = text.replace(",", "")
-text = text.replace(".", "")
-text = text.replace("(", "")
-text = text.replace(")", "")
-text = text.lower()
-text = text.split(" ")
-[text.remove("") for i in range(text.count(""))]
-
-text.sort()
-
-
-dicc = {}
-for item in text:
-    dicc[item] = text.count(item)
-
-
-print("cantidad de palabras: " + str(len(text)))
-
-print("\n\n\n20 palabras mas repetidas: ")
-for item in sorted(dicc, key=dicc.get, reverse=True)[:20]:
-    print(item + " " + str(dicc[item]))
-
-print("\n\n\nTodas las palabras y sus cantidades: ")
-for item in dicc.items():
-    print(str(item[0]) + " " + str(item[1]))
+wordcount(text)

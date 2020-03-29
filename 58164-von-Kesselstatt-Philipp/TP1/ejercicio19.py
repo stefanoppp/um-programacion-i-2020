@@ -79,7 +79,7 @@ class Venta():
         self.tarjeta = tajeta_de_credito
 
 
-class Main():
+class Ejercicio19():
 
     def __init__(self, archivo):
         self.archivo = archivo
@@ -101,11 +101,11 @@ class Main():
                         self.lista[3])
         return persona
 
-    def addToJSON(self, ventas):
+    def addToJSON(self, objetoVenta):
 
-        self.line = ("{nombre:" + ventas.getTarjeta().getNombre() +
-                     ", monto: \$" + ventas.getMonto() +
-                     ", descripcion:" + ventas.getDescripcion() +
+        self.line = ("{nombre:" + objetoVenta.getTarjeta().getNombre() +
+                     ", monto: \$" + objetoVenta.getMonto() +
+                     ", descripcion:" + objetoVenta.getDescripcion() +
                      "}")
 
         os.system("echo " +
@@ -144,9 +144,16 @@ class Main():
         for item in self.dicc.items():
             print(str(item[0]) + " " + str(item[1]))
 
+    def readFile(self):
+
+        os.system("cat " +
+                  self.path +
+                  self.archivo[:self.archivo.find(".")] +
+                  ".json")
+
 
 """
-example = Main("tt.txt")
+example = Ejercicio19("tt.txt")
 
 persona1 = example.createPerson("Ocho Hache")
 
@@ -155,5 +162,7 @@ persona2 = example.createPerson("Uno A")
 example.addToJSON(persona2)
 
 example.addToJSON(persona1)
+
+example.readFile()
 """
 # example.countWords()

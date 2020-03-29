@@ -17,6 +17,10 @@ créditos del curso.
 """
 
 creditos = {"Matemáticas": "6", "Física": "4", "Química": "5"}
+total = 0
 
 for item in creditos:
     print(item + " tiene " + creditos[item] + " creditos")
+    total += int(creditos[item])
+
+print("El total de creditos del curso es:", total)

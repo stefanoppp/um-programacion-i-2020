@@ -1,5 +1,9 @@
-result = ""
-for n in range(1, int(input("Ingrese un numero: ")), 2):
-    result += str(n) + ", "
+def impar(numero):
+    result = ""
+    for n in range(1, numero, 2):
+        result += str(n) + ", "
 
-print(result[:-2])
+    return result[:-2]
+
+
+# print(impar(int(input("Ingrese un numero: "))))

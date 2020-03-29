@@ -1,4 +1,1 @@
-frase = input("ingrese una frase: ")
-letra = input("ingrese una letra: ")
-
-print(frase.count(letra))
+print(input("ingrese una frase: ").count(input("ingrese una letra: ")))
