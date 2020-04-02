@@ -1,22 +1,27 @@
-
-name = input('Nombre>>')
-sex = input('Sexo(m o f)>>')
-
-aplha = list(map(chr, range(97, 123)))
-index = aplha.index(name[0].lower())
-
-if name.isalnum():
-    print('bad_name_input')
-    exit()
-if sex.lower() == 'f':
-    if index < 13:
-        print('GRUPO A')
+def check(name, sex):
+    aplha = list(map(chr, range(97, 123)))
+    index = aplha.index(name[0].lower())
+    if not name.isalpha():
+        return('bad_name_input')
+    if sex.lower() == 'f':
+        if index < 13:
+            return('GRUPO A')
+        else:
+            return('GRUPO B')
+    elif sex.lower() == 'm':
+        if index >= 13:
+            return('GRUPO A')
+        else:
+            return('GRUPO B')
     else:
-        print('GRUPO B')
-elif sex.lower() == 'm':
-    if index >= 13:
-        print('GRUPO A')
-    else:
-        print('GRUPO B')
-else:
-    print('bad_sex_input')
+        return('bad_sex_input')
+
+
+def main():
+    name = input('Nombre>>')
+    sex = input('Sexo(m o f)>>')
+    print(check(name, sex))
+
+
+if __name__ == '__main__':
+    main()

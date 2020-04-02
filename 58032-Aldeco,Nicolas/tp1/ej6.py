@@ -5,10 +5,15 @@ def is_prime(num):
     return True
 
 
-number = int(input('number = '))
-res = is_prime(number)
-if res:
-    tipo = 'Primo'
-else:
-    tipo = 'No Primo'
-print('El numero ', str(number), ' es:', tipo)
+def main():
+    number = int(input('number = '))
+    res = is_prime(number)
+    if res:
+        tipo = 'Primo'
+    else:
+        tipo = 'No Primo'
+    print('El numero ', str(number), ' es:', tipo)
+
+
+if __name__ == '__main__':
+    main()
