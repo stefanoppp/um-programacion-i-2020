@@ -1,0 +1,6 @@
+Lucas Soria, 1235.74, supermercado, contado
+Lucas Soria, 3200.837, cafetera, tarjeta
+Alejandra Gava, 15250, avioneta a escala, contado
+Belen Soria, 2300, internet, tarjeta
+Roberto Soria, 12000, muebles, contado
+Roberto Soria, 1235.32135, , tarjeta

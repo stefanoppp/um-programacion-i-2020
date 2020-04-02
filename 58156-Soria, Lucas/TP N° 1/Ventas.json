@@ -1,0 +1,38 @@
+[
+	{
+		"nombre": "Lucas Soria",
+		"monto": 1235.74,
+		"descripcion": "supermercado",
+		"formapago": "contado"
+	},
+	{
+		"nombre": "Lucas Soria",
+		"monto": 3200.84,
+		"descripcion": "cafetera",
+		"formapago": "tarjeta"
+	},
+	{
+		"nombre": "Alejandra Gava",
+		"monto": 15250.0,
+		"descripcion": "avioneta a escala",
+		"formapago": "contado"
+	},
+	{
+		"nombre": "Belen Soria",
+		"monto": 2300.0,
+		"descripcion": "internet",
+		"formapago": "tarjeta"
+	},
+	{
+		"nombre": "Roberto Soria",
+		"monto": 12000.0,
+		"descripcion": "muebles",
+		"formapago": "contado"
+	},
+	{
+		"nombre": "Roberto Soria",
+		"monto": 1235.32,
+		"descripcion": "",
+		"formapago": "tarjeta"
+	}
+]
