@@ -11,4 +11,3 @@ class Numero():
 if __name__ == "__main__":
     num = Numero(int(input("rango: ")))
     print("impares hasta el " + str(num.valor) + ": " + ", ".join(num.obtener_impares()))
-        
