@@ -1,8 +1,6 @@
-import os
-
-
 class EmptyValue(Exception):
     pass
+
 
 class LectorDeVentas():
     def __init__(self, archivo):
@@ -10,39 +8,41 @@ class LectorDeVentas():
         self.path = __file__.replace("ejercicio18.py", "")
         self.texto = open(self.path + self.archivo).read()
 
-    def readVenta(self, nombre):
+    def convertToJSON(self):
+        self.lista = [item.split(", ") for item in self.texto.split("\n")[:-1]]
+        self.archivoComoJSON = '{"ventas": [\n'
 
-        self.line = self.texto[self.texto.find(nombre):]
-        self.line = self.line[:self.line.find("\n")]
+        for item in self.lista:
 
-        return self.line
+            if "" in item:
+                raise EmptyValue()
 
-    def addToJSON(self, nombre):
-        self.lista = self.readVenta(nombre).split(", ")
+            self.archivoComoJSON += ('{"nombre": "' + item[0] +
+                                     '", "monto": ' + item[1] +
+                                     ', "descripcion": "' + item[2] +
+                                     '", "forma de pago": "' + item[3] +
+                                     '"},\n')
 
-        if "" in self.lista:
-            raise EmptyValue()
 
-        self.line = ("{nombre:" + self.lista[0] +
-                     ", monto: \$" + self.lista[1] +
-                     ", descripcion:" + self.lista[2] +
-                     ", forma de pago:" + self.lista[3] + "}")
 
-        os.system("echo " +
-                  self.line +
-                  " >> " +
-                  self.path +
-                  self.archivo[:self.archivo.find(".")] +
-                  ".json")
+
+
+        self.archivoComoJSON = self.archivoComoJSON[:-2]
+        self.archivoComoJSON += '\n]}\n'
+
+        self.JSON = open(self.path +
+                         self.archivo[:self.archivo.find(".")] +
+                         ".json", "w")
+        self.JSON.write(self.archivoComoJSON)
+
+        self.JSON.close()
 
 
 """
 archivo = "txt.txt"
 ejercicio18 = LectorDeVentas(archivo)
 
-nombre = "Dato Vacio"
-
-ejercicio18.addToJSON(nombre)
+ejercicio18.convertToJSON()
 """
 
 # os.system("cat " + ejercicio18.path + "txt.json")
