@@ -14,6 +14,18 @@ class TarjetaCredito():
         self.codigo = codigo
         self.tipo = tipo
 
+    def getNombre(self):
+        return self.nombre
+
+    def getNumero(self):
+        return self.numero
+
+    def getCodigo(self):
+        return self.codigo
+
+    def getTipo(self):
+        return self.tipo
+
 
 class Venta():
 
@@ -38,10 +50,10 @@ class Venta():
             "monto": round(float(self.getMonto()), 2),
             "descripcion": self.getDescripcion(),
             "tajetaCredito": {
-                "nombre": tarjeta.nombre,
-                "numero": tarjeta.numero,
-                "codigo": tarjeta.codigo,
-                "tipo": tarjeta.tipo
+                "nombre": tarjeta.getNombre(),
+                "numero": tarjeta.getNumero(),
+                "codigo": tarjeta.getCodigo(),
+                "tipo": tarjeta.getTipo()
             }
         }
         return dic
