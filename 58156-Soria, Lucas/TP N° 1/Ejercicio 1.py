@@ -1,7 +1,7 @@
-usr = input("Ingrese su nombre: ").lower()
-gen = input("Ingrese su genero (mujer u hombre): ").lower()
+user = input("Ingrese su nombre: ").lower()
+sex = input("Ingrese su genero (mujer u hombre): ").lower()
 
-if (gen == "mujer" and usr < "m") or (gen == "hombre" and usr > "n"):
+if (sex == "mujer" and user < "m") or (sex == "hombre" and user > "n"):
     print("Es parte del grupo A")
 else:
     print("Es parte del grupo B")

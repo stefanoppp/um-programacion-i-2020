@@ -6,44 +6,19 @@ class ErrorValorNoValido(Exception):
     pass
 
 
-class TarjetaCredito():
-
-    def __init__(self, nombre, numero, codigo, tipo):
-        self.nombre = nombre
-        self.numero = numero
-        self.codigo = codigo
-        self.tipo = tipo
-
-
-class Venta():
+class Venta:
 
     def __init__(self, archivo, archivo1):
         self.archivo = archivo
         self.archivo1 = archivo1
 
-    def getMonto(self):
-        return self.monto
-
-    def setMonto(self, monto):
-        self.monto = monto
-
-    def getDescripcion(self):
-        return self.descripcion
-
-    def setDescripcion(self, descripcion):
-        self.descripcion = descripcion
-
-    def aDiccionario(self, linea, tarjeta):
+    def aDiccionario(self, linea):
         dic = {
-            "monto": round(float(self.getMonto()), 2),
-            "descripcion": self.getDescripcion(),
-            "tajetaCredito": {
-                "nombre": tarjeta.nombre,
-                "numero": tarjeta.numero,
-                "codigo": tarjeta.codigo,
-                "tipo": tarjeta.tipo
-            }
-        }
+               "nombre": linea[0],
+               "monto": round(float(linea[1]), 2),
+               "descripcion": linea[2],
+               "formapago": linea[3]
+              }
         return dic
 
     def convertirInfo(self):
@@ -56,10 +31,7 @@ class Venta():
                     raise ErrorValorNoValido
                 if c != 0:
                     self.archivo1.write(",\n")
-                tajeta = TarjetaCredito(linea[0], linea[1], linea[2], linea[3])
-                self.setMonto(linea[4])
-                self.setDescripcion(linea[5])
-                dic = self.aDiccionario(linea, tajeta)
+                dic = self.aDiccionario(linea)
                 json.dump(dic, self.archivo1, indent=4)
                 c += 1
             except ErrorValorNoValido:

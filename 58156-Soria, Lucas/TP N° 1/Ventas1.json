@@ -1,0 +1,62 @@
+[
+{
+    "monto": 132165.0,
+    "descripcion": "Casa en LA",
+    "tajetaCredito": {
+        "nombre": "Lucas Soria",
+        "numero": "362536867482734",
+        "codigo": "125",
+        "tipo": "American Express"
+    }
+},
+{
+    "monto": 357.0,
+    "descripcion": "Celular",
+    "tajetaCredito": {
+        "nombre": "Belen Soria",
+        "numero": "362532567482734",
+        "codigo": "156",
+        "tipo": "Visa"
+    }
+},
+{
+    "monto": 9846.24,
+    "descripcion": "Alcohol en gel",
+    "tajetaCredito": {
+        "nombre": "Roberto Soria",
+        "numero": "361936867482734",
+        "codigo": "198",
+        "tipo": "Master Card"
+    }
+},
+{
+    "monto": 4186.0,
+    "descripcion": "Compras",
+    "tajetaCredito": {
+        "nombre": "Alejandra Gava",
+        "numero": "362536867485934",
+        "codigo": "165",
+        "tipo": "American Express"
+    }
+},
+{
+    "monto": 984.67,
+    "descripcion": "Comida",
+    "tajetaCredito": {
+        "nombre": "Lucas Soria",
+        "numero": "362536867482734",
+        "codigo": "125",
+        "tipo": "American Express"
+    }
+},
+{
+    "monto": 28155.0,
+    "descripcion": "Tesla",
+    "tajetaCredito": {
+        "nombre": "Lucas Soria",
+        "numero": "362536867482734",
+        "codigo": "125",
+        "tipo": "American Express"
+    }
+}
+]

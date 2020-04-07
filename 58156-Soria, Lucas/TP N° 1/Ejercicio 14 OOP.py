@@ -1,4 +1,7 @@
-texto = '''
+class Texto:
+
+    def __init__(self):
+        self.texto = '''
 La soja es la principal producción del agro argentino. Su producción se
  realiza en Argentina desde hace varias décadas, siendo introducida en la
  década del 70. Es entonces cuando comienza el proceso de “sojización”
@@ -37,21 +40,32 @@ En el contexto internacional Argentina compite históricamente por el puesto
  principales competidores de las exportaciones nacionales. Por otro lado,
  nuestros principales compradores de soja son China y la Zona Euro.
 '''
+        self.palabras = {}
+        self.pal = {}
 
-palabras = {}
-for i in texto.lower().replace("," or "." or "-" or "\n", "").split(" "):
-    if i not in palabras.keys():
-        palabras[i] = 1
-    else:
-        palabras[i] += 1
+    def top20(self):
+        for i in self.texto.lower().replace("," or "." or "-" or "\n",
+                                            "").split(" "):
+            if i not in self.palabras.keys():
+                self.palabras[i] = 1
+            else:
+                self.palabras[i] += 1
+        c = 0
+        for i in sorted(self.palabras.items(), key=lambda x: x[1],
+                        reverse=True):
+            if c == 20:
+                break
+            self.pal[i[0]] = i[1]
+            c += 1
+        return self.pal
 
-c = 0
-pal = {}
-for i in sorted(palabras.items(), key=lambda x: x[1], reverse=True):
-    if c == 20:
-        break
-    pal[i[0]] = i[1]
-    c += 1
 
-for i in sorted(pal.items()):
-    print("'{}' se repitio {} veces".format(i[0], i[1]))
+def main():
+    tex = Texto()
+    pal = tex.top20()
+    for i in sorted(pal.items()):
+        print("'{}' se repitio {} veces".format(i[0], i[1]))
+
+
+if __name__ == "__main__":
+    main()
