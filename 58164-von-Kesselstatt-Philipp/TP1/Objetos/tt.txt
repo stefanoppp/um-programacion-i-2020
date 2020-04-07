@@ -1,4 +1,3 @@
-
 Nombre apellido, 100000000, 1111, tipo, 100, descripción
 Uno A, 200000000, 2222, tipo, 170, Shampoo
 Dos Be, 300000000, 3333, tipo, 58, Nose

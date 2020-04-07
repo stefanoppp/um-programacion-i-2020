@@ -1,4 +1,5 @@
 import os
+import json
 
 
 class EmptyValue(Exception):
@@ -41,6 +42,14 @@ class TarjetaCredito():
     def setTipo(self, tipo_de_tajeta_de_credito):
         self.tipo = tipo_de_tajeta_de_credito
 
+    def __repr__(self):
+        return {
+                 "Nombre y apellido": self.nombre,
+                 "número de tarjeta de credito": self.nro,
+                 "código de verificación": self.ver,
+                 "tipo de tajeta de crédito": self.tipo,
+                }
+
 
 class Venta():
     def __init__(self,
@@ -78,61 +87,66 @@ class Venta():
     def setTarjeta(self, tajeta_de_credito):
         self.tarjeta = tajeta_de_credito
 
+    def __repr__(self):
+        return {
+            "Nombre y apellido": self.getTarjeta().getNombre(),
+            "monto": self.monto,
+            "descripcion": self.descripcion
+        }
+
 
 class Ejercicio19():
 
     def __init__(self, archivo):
         self.archivo = archivo
         self.path = __file__.replace("ejercicio19.py", "")
-
-    def createPerson(self, nombre):
-
+        self.archivoJSON = self.archivo[:self.archivo.find(".")] + ".json"
         self.texto = open(self.path + self.archivo).read()
+        self.lista = []
 
-        self.texto = self.texto[self.texto.find(nombre):]
+        for item in self.texto.split("\n")[:-1]:
 
-        self.lista = self.texto[:self.texto.find("\n")].split(", ")
+            if "" in item.split(", "):
+                raise EmptyValue()
 
-        persona = Venta(self.lista[4],
-                        self.lista[5],
-                        self.lista[0],
-                        self.lista[1],
-                        self.lista[2],
-                        self.lista[3])
+            self.lista.append(item.split(", "))
+
+        self.listOfPeople = [self.createPerson(item)
+                             for item in self.lista]
+
+    def createPerson(self, lista):
+
+        persona = Venta(lista[4],
+                        lista[5],
+                        lista[0],
+                        lista[1],
+                        lista[2],
+                        lista[3])
         return persona
 
-    def addToJSON(self, objetoVenta):
+    def convertToJSON(self):
 
-        self.line = ("{nombre:" + objetoVenta.getTarjeta().getNombre() +
-                     ", monto: \$" + objetoVenta.getMonto() +
-                     ", descripcion:" + objetoVenta.getDescripcion() +
-                     "}")
+        self.listOfDicts = [item.__repr__() for item in self.listOfPeople]
 
-        os.system("echo " +
-                  self.line +
-                  " >> " +
-                  self.path +
-                  self.archivo[:self.archivo.find(".")] +
-                  ".json")
+        self.JSON = open(self.path + self.archivoJSON, "w")
+        json.dump(self.listOfDicts, self.JSON, indent=4)
+        self.JSON.close()
 
     def readFile(self):
 
         os.system("cat " +
                   self.path +
-                  self.archivo[:self.archivo.find(".")] +
-                  ".json")
+                  self.archivoJSON)
+
+    def getPeople(self):
+        return self.listOfPeople
 
 
 """
 example = Ejercicio19("tt.txt")
 
-persona1 = example.createPerson("Ocho Hache")
-
-persona2 = example.createPerson("Uno A")
-
-example.addToJSON(persona2)
-
-example.addToJSON(persona1)
-
-example.readFile()
+example.convertToJSON()
 """
+# example.readFile()
+
+# print(example.getPeople()[4].getTarjeta().getNumero())

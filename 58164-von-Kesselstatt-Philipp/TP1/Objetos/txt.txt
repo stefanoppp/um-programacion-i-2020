@@ -15,6 +15,5 @@ Trece Eme, 60, descripcion de nuevo, contado
 Catorce Ene, 35, y de nuevo, tarjeta
 Quince Eñe, 330, ejemplo, contado
 Dieciseis O, 464, example, tarjeta
-Dato Vacio, 50, , contado
 Diecisiete Pe, 190, me quedo sin ejemplos, contado
 Dieciocho Qu, 12, aaaaaaaaaa, contado
