@@ -1,0 +1,42 @@
+[
+    {
+        "Nombre": "natalia sabina",
+        "Numero de Tarjeta": "2654 5423 4212 2154",
+        "Codigo de Verificacion": "123",
+        "Tipo": "VISA",
+        "Monto Venta": "4500",
+        "Descripcion": "auriculares"
+    },
+    {
+        "Nombre": "rolando hernandez",
+        "Numero de Tarjeta": "5421 6945 2154 3654",
+        "Codigo de Verificacion": "456",
+        "Tipo": "VISA",
+        "Monto Venta": "29999",
+        "Descripcion": "TV Samung 43"
+    },
+    {
+        "Nombre": "olga diaz",
+        "Numero de Tarjeta": "1299 5812 8589 9665",
+        "Codigo de Verificacion": "587",
+        "Tipo": "MASTER",
+        "Monto Venta": "5799",
+        "Descripcion": "CPU Sentey"
+    },
+    {
+        "Nombre": "josefina olmedo",
+        "Numero de Tarjeta": "6882 5526 6898 6595",
+        "Codigo de Verificacion": "154",
+        "Tipo": "MASTER",
+        "Monto Venta": "25999",
+        "Descripcion": "PS4"
+    },
+    {
+        "Nombre": "ignacion carrillo",
+        "Numero de Tarjeta": "",
+        "Codigo de Verificacion": "123 ",
+        "Tipo": "VISA",
+        "Monto Venta": "30000",
+        "Descripcion": "Pasaje a MIami"
+    }
+]

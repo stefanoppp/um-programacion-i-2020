@@ -1,0 +1,37 @@
+[
+    {
+        "Nombre": "natalia sabina",
+        "Monto": "2540",
+        "Descripcion": "Aspiradora philco",
+        "Forma de pago": "contado"
+    },
+    {
+        "Nombre": "rolando hernandez",
+        "Monto": "355",
+        "Descripcion": "Mouse inalambrico",
+        "Forma de pago": "contado"
+    },
+    {
+        "Nombre": "irma sanchez",
+        "Monto": "29999",
+        "Descripcion": "TV Samsung 43'",
+        "Forma de pago": "tarjeta"
+    },
+    {
+        "Nombre": "alvaro navarro,15999",
+        "Monto": "Sofa doble",
+        "Descripcion": "tarjeta   "
+    },
+    {
+        "Nombre": "olga diaz",
+        "Monto": "1299",
+        "Descripcion": "cargador portatil",
+        "Forma de pago": "contado"
+    },
+    {
+        "Nombre": "josefina olmedo",
+        "Monto": "25999",
+        "Descripcion": "PS4",
+        "Forma de pago": "tarjeta"
+    }
+]
