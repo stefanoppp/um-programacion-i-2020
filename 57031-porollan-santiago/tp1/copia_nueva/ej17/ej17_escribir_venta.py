@@ -34,7 +34,6 @@ def convertir_a_json():
     for y, line in enumerate(open("venta")):
         d_obj = {}
         L = line.split()
-        print(L, y)
         for x in range(5):
             d_obj[inp(x)[:-2]] = L[x*2+1]
         data[y] = d_obj
