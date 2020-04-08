@@ -1,0 +1,23 @@
+{
+    "0": {
+        "nombre": "n1.",
+        "apellido": "a1.",
+        "monto": "m1.",
+        "descripci\u00f3n": "d1.",
+        "metodo de pago": "m1"
+    },
+    "1": {
+        "nombre": "n2.",
+        "apellido": "a2.",
+        "monto": "m2.",
+        "descripci\u00f3n": "d2.",
+        "metodo de pago": "m2"
+    },
+    "2": {
+        "nombre": "n3.",
+        "apellido": "a3.",
+        "monto": "m3.",
+        "descripci\u00f3n": "d3.",
+        "metodo de pago": "m3"
+    }
+}
