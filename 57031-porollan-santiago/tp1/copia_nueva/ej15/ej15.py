@@ -24,6 +24,7 @@ class Pago():
         return True
     
     def write(self):
+        print("escribiendo datos")
         with open("venta", 'a') as v:
             v.write(self.nombre + " " + self.apellido + " " + self.monto +
                     " " + self.descripcion + " " +self.metodo + "\n")
