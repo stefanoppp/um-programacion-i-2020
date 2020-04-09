@@ -1,0 +1,5 @@
+
+Javier Cercasi, 500, piscina, contado
+Juan perez, 400, auto, contado
+Juan, 300,, tarjeta
+Julian Rodriguez, 566600, casa, contado
