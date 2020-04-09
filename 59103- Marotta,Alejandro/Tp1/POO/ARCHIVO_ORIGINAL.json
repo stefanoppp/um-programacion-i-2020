@@ -1,0 +1,28 @@
+{
+    "ventas": [
+        {
+            "nombre": "Alejandro Marotta",
+            "monto": "5000",
+            "descripcion": " Hidrolavadora ",
+            "formapago": " Tarjeta "
+        },
+        {
+            "nombre": "Juan Perez ",
+            "monto": " 4000 ",
+            "descripcion": " Aspiradora ",
+            "formapago": " Tarjeta "
+        },
+        {
+            "nombre": "Martin Garcia ",
+            "monto": "500",
+            "descripcion": " Martillo ",
+            "formapago": " Efectivo "
+        },
+        {
+            "nombre": "Franco Gutierrez ",
+            "monto": " 200 ",
+            "descripcion": " Tornillos varios ",
+            "formapago": " Efectivo "
+        }
+    ]
+}

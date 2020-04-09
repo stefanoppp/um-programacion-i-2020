@@ -1,0 +1,44 @@
+{
+    "ventas": [
+        {
+            "monto": "5000",
+            "descripcion": " Hidrolavadora",
+            "tarjeta": {
+                "nombre": "Alejandro Marotta",
+                "numero de tarejeta": "1245789086",
+                "codigo de verificacion": "789",
+                "tipo de tarjeta": "Visa"
+            }
+        },
+        {
+            "monto": " 4000 ",
+            "descripcion": " Aspiradora",
+            "tarjeta": {
+                "nombre": "Juan Perez ",
+                "numero de tarejeta": "4563789654",
+                "codigo de verificacion": "456",
+                "tipo de tarjeta": "Mastercard"
+            }
+        },
+        {
+            "monto": "500",
+            "descripcion": " Martillo",
+            "tarjeta": {
+                "nombre": "Martin Garcia",
+                "numero de tarejeta": "3524678976",
+                "codigo de verificacion": "589",
+                "tipo de tarjeta": "American Express"
+            }
+        },
+        {
+            "monto": "200 ",
+            "descripcion": " Tornillos varios ",
+            "tarjeta": {
+                "nombre": "Franco Gutierrez ",
+                "numero de tarejeta": "5664790646",
+                "codigo de verificacion": "123",
+                "tipo de tarjeta": "Visa"
+            }
+        }
+    ]
+}
