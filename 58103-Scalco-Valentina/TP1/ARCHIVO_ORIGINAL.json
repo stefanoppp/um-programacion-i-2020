@@ -1,14 +1,14 @@
 {
     "venta numero1": {
         "nombre": "\"Carlos Perez\"",
-        "monto": " 500",
-        "descripcion": " \"venta ramo de rosas\"",
-        "formapago": " \"efectivo\"."
+        "monto": "500",
+        "descripcion": "\"venta ramo de rosas\"",
+        "formapago": "\"efectivo\"."
     },
     "venta numero2": {
         "nombre": "\"Sandra Fatran\"",
-        "monto": " 250",
-        "descripcion": " \"venta caja de chocolates\"",
-        "formapago": " \"tarjeta\"."
+        "monto": "250",
+        "descripcion": "\"venta caja de chocolates\"",
+        "formapago": "\"tarjeta\"."
     }
 }
