@@ -1,0 +1,7 @@
+Lucas Soria, 362536867482734, 125, American Express, 132165, Casa en LA
+Belen Soria, 362532567482734, 156, Visa, 357, Celular
+Roberto Soria, 361936867482734, 198, Master Card, 9846.235, Alcohol en gel
+Alejandra Gava, 362536867485934, 165, American Express, 4186, Compras
+Lucas Soria, 362536867482734, 125, American Express, 984.6684, Comida
+Lucas Soria, , 125, American Express, 1000000000, Amazon
+Lucas Soria, 362536867482734, 125, American Express, 28155, Tesla
