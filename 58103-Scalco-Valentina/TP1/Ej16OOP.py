@@ -13,7 +13,7 @@ class Archivo_venta:
 
 
 def main():
-    archivo = open("/home/valenscalco/Programacion/um-programacion-i-2020/58103-Scalco-Valentina/Datosventa")
+    archivo = open("/home/valenscalco/Programacion/um-programacion-i-2020/58103-Scalco-Valentina/TP/Datosventa")
     info = Archivo_venta(archivo)
     info.leer()
 
