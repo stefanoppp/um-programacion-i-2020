@@ -1,0 +1,5 @@
+nicolas aldeco, 200, tela para costura, tarjeta
+pepe honguito, 350.69, maquina para soldar, contado
+agustin gauchat, 50, papel, tarjeta
+juancito castro, 65, tapetez, contado
+pablo gomez, 1000, camion de jugete, contado
