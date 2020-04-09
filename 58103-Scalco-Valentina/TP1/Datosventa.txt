@@ -1,0 +1,2 @@
+"Carlos Perez", 500, "venta ramo de rosas", "efectivo".
+"Sandra Fatran", 250, "venta caja de chocolates", "tarjeta".
