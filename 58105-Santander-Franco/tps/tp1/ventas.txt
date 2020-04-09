@@ -1,0 +1,4 @@
+Franco Santander,, 258, MasterCard, $58000, Neumaticos
+Lucas Pedroza, 1212 8989 2323 2323, 493, Visa, $8000, Teclado
+Jorge Benegas, 3535 8989 7474 2323, 789, MasterCard, $60000, Pc Gamer
+Mauricio Fernandez, 7575 8989 6161 2323, 132, Visa, $20000, Playstation

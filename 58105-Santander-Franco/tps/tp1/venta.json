@@ -1,0 +1,14 @@
+{
+    "venta numero1": {
+        "Nombre": "Lucas pedroza",
+        "Monto": " $7500",
+        "Especificacion": " Mouse Red Dragon",
+        "Forma de pago": " tarjeta"
+    },
+    "venta numero2": {
+        "Nombre": "Mauricio Benegas",
+        "Monto": " $15000",
+        "Especificacion": " Pc Gamer",
+        "Forma de pago": " tarjeta"
+    }
+}
