@@ -1,3 +1,6 @@
+import json
+
+
 class EmptyValue(Exception):
     pass
 
@@ -8,41 +11,37 @@ class LectorDeVentas():
         self.path = __file__.replace("ejercicio18.py", "")
         self.texto = open(self.path + self.archivo).read()
 
+    def listToDict(self, lista):
+
+        if "" in lista:
+            raise EmptyValue()
+
+        result = {
+                  "nombre": lista[0],
+                  "monto": int(lista[1]),
+                  "descripcion": lista[2],
+                  "forma de pago": lista[3]
+                  }
+        return result
+
     def convertToJSON(self):
-        self.lista = [item.split(", ") for item in self.texto.split("\n")[:-1]]
-        self.archivoComoJSON = '{"ventas": [\n'
+        self.archivoJSON = self.archivo[:self.archivo.find(".")] + ".json"
 
-        for item in self.lista:
+        textoLista = self.texto.split("\n")[:-1]
+        self.lista = [self.listToDict(item.split(", ")) for item in textoLista]
 
-            if "" in item:
-                raise EmptyValue()
-
-            self.archivoComoJSON += ('{"nombre": "' + item[0] +
-                                     '", "monto": ' + item[1] +
-                                     ', "descripcion": "' + item[2] +
-                                     '", "forma de pago": "' + item[3] +
-                                     '"},\n')
-
-
-
-
-
-        self.archivoComoJSON = self.archivoComoJSON[:-2]
-        self.archivoComoJSON += '\n]}\n'
-
-        self.JSON = open(self.path +
-                         self.archivo[:self.archivo.find(".")] +
-                         ".json", "w")
-        self.JSON.write(self.archivoComoJSON)
-
+        self.JSON = open(self.path + self.archivoJSON, "w")
+        json.dump(self.lista, self.JSON, indent=4)
         self.JSON.close()
 
 
-"""
+
 archivo = "txt.txt"
 ejercicio18 = LectorDeVentas(archivo)
 
 ejercicio18.convertToJSON()
-"""
 
-# os.system("cat " + ejercicio18.path + "txt.json")
+"""
+import os
+os.system("cat " + ejercicio18.path + "txt.json")
+"""
