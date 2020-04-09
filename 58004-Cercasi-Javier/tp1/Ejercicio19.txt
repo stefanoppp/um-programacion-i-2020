@@ -1,0 +1,5 @@
+
+Javier Cercasi, 7894, 1234, VISA, 300, piscina
+Juan perez, 5678, 0000, MASTERCARD, 400, auto
+Juan, 7652, 1234, VISA, 500, Colchon
+Julian Rodriguez, 8661, 1111, BANELCO, 566600, casa
