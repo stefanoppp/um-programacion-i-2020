@@ -1,0 +1,26 @@
+{
+    "venta numero1": {
+        "Nombre y Apellido": "Lucas Pedroza",
+        "Numeor de Tarjeta de Credito": " 1212 8989 2323 2323",
+        "Codigo de verificacion": " 493",
+        "Tipo de tarjeta de credito": " Visa",
+        "Monto de la venta": " $8000",
+        "Descripcion de la venta": " Teclado"
+    },
+    "venta numero2": {
+        "Nombre y Apellido": "Jorge Benegas",
+        "Numeor de Tarjeta de Credito": " 3535 8989 7474 2323",
+        "Codigo de verificacion": " 789",
+        "Tipo de tarjeta de credito": " MasterCard",
+        "Monto de la venta": " $60000",
+        "Descripcion de la venta": " Pc Gamer"
+    },
+    "venta numero3": {
+        "Nombre y Apellido": "Mauricio Fernandez",
+        "Numeor de Tarjeta de Credito": " 7575 8989 6161 2323",
+        "Codigo de verificacion": " 132",
+        "Tipo de tarjeta de credito": " Visa",
+        "Monto de la venta": " $20000",
+        "Descripcion de la venta": " Playstation"
+    }
+}
