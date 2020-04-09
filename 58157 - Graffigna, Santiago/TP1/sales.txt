@@ -1,0 +1,9 @@
+Agente 47, 150, Bolsas de basura, Efectivo
+Agente 47, 200, Guantes, Efectivo
+Agente 47, 1000, Pala, Efectivo
+Doom Guy, 5000, Cartuchos de escopeta, Tarjeta
+Arthur Morgan, 800, Whisky, Efectivo
+Gordon Freeman, 500, Crowbar, Tarjeta
+Bruno Mars, 700, Moño de vestir, Tarjeta
+
+
