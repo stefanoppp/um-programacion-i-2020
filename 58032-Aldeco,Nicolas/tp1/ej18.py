@@ -2,9 +2,11 @@ import json
 
 
 class Reader():
-    def __init__(self):
-        self.json = open('./ventas.json', 'w')
-        self.texto = open('./ventas.txt', 'r')
+    def __init__(self, json, texto):
+        direc_j = json
+        direc_t = texto
+        self.json = open(direc_j, 'w')
+        self.texto = open(direc_t, 'r')
 
     def load_json(self):
         with open('ventas.json', 'w') as file:
@@ -43,6 +45,6 @@ class Reader():
 
 
 if __name__ == "__main__":
-    obj = Reader()
+    obj = Reader('./ventas.json', './ventas.txt')
     obj.check_file
     obj.load_json()

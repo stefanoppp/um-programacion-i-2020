@@ -1,0 +1,5 @@
+nicolas aldeco, 123456789, 528, visa, 200, tela para costura
+pepe honguito, 987654321, 856, master, 350.69, maquina para soldar
+agustin gauchat, 456321789, 864, visa, 50, papel
+juancito castro, 852369741, 365, uala, 65, tapetez
+pablo gomez, 573162489, 658, visa, 1000, camion de jugete
