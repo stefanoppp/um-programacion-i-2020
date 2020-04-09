@@ -1,0 +1,35 @@
+CARGA DEL PROGRAMA
+
+	Antes de realizar cualquier operacion, le recomendamos 
+encarecidamente que proceda a realizar una copia de trabajo de los diskettes 
+que contienen el programa, y preserve los originales.
+
+	Como hemos dicho anteriormente, el programa funciona con el sistema 
+operativo MS-DOS y ha sido probado satisfactoriamente con la version 3.30 y 
+superiores.
+
+	HABLA puede trabajar con los puertos serie de COM1 a COM4. Para 
+indicar el puerto basta con poner el n£mero de 1 a 4 como par metro, por 
+ejemplo HABLA 2 seleccionaria COM2 como puerto de trabajo. Si no se indica 
+el puerto supone que se va a utilizar COM1.
+
+	Al cargar el programa se configura por defecto la puerta serie a 9600 
+baudios, no paridad, 8 bits de longitud de dato y un bit de parada. Si queremos 
+trabajar con otros par metros de comunicacion, debemos configurar la puerta 
+serie a nuestro gusto con el comando MODE del sistema operativo, y llamar a 
+HABLA con el par metro "N" para indicar que NO queremos que cambie la 
+configuraci¢n (HABLA N).
+
+	El Braille Hablado debe estar forzosamente con la puerta serie y el modo 
+sintetizador de voz activado. El tiempo de espera debe estar puesto a cero. El 
+protocolo es conveniente establecerlo en no protocolo. El resto de par metros, 
+velocidad, tono, etc, a gusto del usuario. Es importante saber que la 
+pronunciacion de la puntuacion y de los numeros depende del Braille Hablado y 
+no de HABLA.
+
+DESCARGA DEL PROGRAMA
+
+	Para descargar HABLA de la memoria no tenemos que "resetear" el 
+ordenador, basta con que lo llamemos con la opcion D, es decir pulsariamos en 
+el indicador del DOS, HABLA D. De esta forma el ordenador funcionar  
+exactamente igual que si HABLA no se hubiera cargado.

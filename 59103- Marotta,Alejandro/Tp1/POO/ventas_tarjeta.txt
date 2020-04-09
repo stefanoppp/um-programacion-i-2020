@@ -1,0 +1,4 @@
+Alejandro Marotta,1245789086,789,Visa,5000, Hidrolavadora
+Juan Perez ,4563789654,456,Mastercard, 4000 , Aspiradora
+Martin Garcia,3524678976,589,American Express,500, Martillo
+Franco Gutierrez ,5664790646,123,Visa,200 , Tornillos varios 

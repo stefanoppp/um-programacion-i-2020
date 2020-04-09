@@ -1,0 +1,4 @@
+Alejandro Marotta,5000, Hidrolavadora , Tarjeta 
+Juan Perez , 4000 , Aspiradora , Tarjeta 
+Martin Garcia ,500, Martillo , Efectivo 
+Franco Gutierrez , 200 , Tornillos varios , Efectivo 
